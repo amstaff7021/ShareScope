@@ -1,0 +1,12 @@
+ShareScope.exe
+ShareScope.rar
+sharescope_state.json
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.7z
+*.rar
+__pycache__/
+*.pyc

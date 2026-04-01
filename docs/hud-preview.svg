@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="625" viewBox="0 0 460 625" role="img" aria-label="ShareScope HUD preview">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#071221"/>
+      <stop offset="100%" stop-color="#09111d"/>
+    </linearGradient>
+    <style>
+      .bg { fill: url(#bg); }
+      .panel { fill: #0a1527; stroke: #29558f; stroke-width: 1; }
+      .muted { fill: #9db1d2; font: 14px 'Consolas', 'Courier New', monospace; }
+      .body { fill: #d6e7ff; font: 15px 'Consolas', 'Courier New', monospace; }
+      .title { fill: #e6f1ff; font: 700 18px 'Consolas', 'Courier New', monospace; }
+      .button { fill: #102440; stroke: #4e8ed8; stroke-width: 1; }
+      .buttonText { fill: #95ccff; font: 16px 'Consolas', 'Courier New', monospace; letter-spacing: 1px; }
+      .chip { fill: #0d1f35; stroke: #3767a6; stroke-width: 1; }
+      .chipText { fill: #7fd5ff; font: 15px 'Consolas', 'Courier New', monospace; }
+      .okText { fill: #74ffbc; font: 15px 'Consolas', 'Courier New', monospace; }
+      .drop { fill: #081425; stroke: #4e8ed8; stroke-width: 1; stroke-dasharray: 4 3; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="460" height="625"/>
+  <rect x="0.5" y="0.5" width="459" height="624" fill="none" stroke="#1f3f6b"/>
+
+  <circle cx="18" cy="18" r="6" fill="#ff7d96"/>
+  <circle cx="39" cy="18" r="6" fill="#f2c14a"/>
+  <circle cx="60" cy="18" r="6" fill="#6bc4ff"/>
+  <text class="muted" x="82" y="23">root@sharescope:~$ mini_hud</text>
+
+  <rect class="panel" x="10" y="45" width="440" height="88"/>
+  <text class="title" x="23" y="71">ShareScope</text>
+  <text class="muted" x="23" y="97">Drop a file. Direct media link first, fallback page if</text>
+  <text class="muted" x="23" y="119">needed.</text>
+
+  <rect class="panel" x="10" y="145" width="440" height="56"/>
+  <rect class="chip" x="22" y="153" width="48" height="28"/>
+  <text class="chipText" x="31" y="172">IDLE</text>
+  <rect class="chip" x="81" y="153" width="88" height="28"/>
+  <text class="okText" x="93" y="172">FALLBACK OK</text>
+  <text class="muted" x="179" y="169">Link copied for 20260401-1101-</text>
+  <text class="muted" x="179" y="188">43.6989450.mp4.</text>
+
+  <rect class="panel" x="10" y="213" width="440" height="201"/>
+  <rect class="drop" x="22" y="231" width="416" height="113"/>
+  <text class="body" x="132" y="293">Drag and drop files here</text>
+  <rect class="button" x="28" y="367" width="110" height="34"/>
+  <text class="buttonText" x="37" y="389">BROWSE FILES</text>
+
+  <rect class="panel" x="10" y="425" width="440" height="189"/>
+  <text class="body" x="22" y="453">1 file(s)</text>
+  <rect class="button" x="383" y="437" width="52" height="28"/>
+  <text class="buttonText" x="391" y="456">CLEAR</text>
+
+  <line x1="10" y1="474" x2="450" y2="474" stroke="#1f3f6b"/>
+  <text class="body" x="22" y="497">20260401-1101-43.6989450.mp4</text>
+  <text class="muted" x="22" y="523">DIRECT LINK / 10.8 MB</text>
+  <rect class="button" x="339" y="486" width="45" height="31"/>
+  <text class="buttonText" x="348" y="507">COPY</text>
+  <rect class="button" x="389" y="486" width="45" height="31"/>
+  <text class="buttonText" x="398" y="507">OPEN</text>
+</svg>
