@@ -12,7 +12,7 @@ L'app est pensee pour les usages rapides, notamment quand un fichier ou une vide
 
 ## Apercu
 
-![ShareScope HUD](docs/hud-preview.svg)
+![ShareScope HUD](docs/hud-preview-v2.svg)
 
 ## Fonctionnalites
 
