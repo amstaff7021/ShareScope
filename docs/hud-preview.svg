@@ -1,61 +1,64 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="460" height="625" viewBox="0 0 460 625" role="img" aria-label="ShareScope HUD preview">
+<svg xmlns="http://www.w3.org/2000/svg" width="463" height="649" viewBox="0 0 463 649" role="img" aria-label="ShareScope HUD preview">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#071221"/>
-      <stop offset="100%" stop-color="#09111d"/>
+      <stop offset="0%" stop-color="#081320"/>
+      <stop offset="100%" stop-color="#09111c"/>
     </linearGradient>
     <style>
       .bg { fill: url(#bg); }
+      .frame { fill: none; stroke: #20456f; stroke-width: 1; }
       .panel { fill: #0a1527; stroke: #29558f; stroke-width: 1; }
-      .muted { fill: #9db1d2; font: 14px 'Consolas', 'Courier New', monospace; }
-      .body { fill: #d6e7ff; font: 15px 'Consolas', 'Courier New', monospace; }
-      .title { fill: #e6f1ff; font: 700 18px 'Consolas', 'Courier New', monospace; }
+      .rule { stroke: #1f3f6b; stroke-width: 1; }
+      .title { fill: #f1f6ff; font: 700 18px 'Consolas', 'Courier New', monospace; }
+      .body { fill: #d7e7ff; font: 14px 'Consolas', 'Courier New', monospace; }
+      .muted { fill: #9bb2d4; font: 13px 'Consolas', 'Courier New', monospace; }
       .button { fill: #102440; stroke: #4e8ed8; stroke-width: 1; }
-      .buttonText { fill: #95ccff; font: 16px 'Consolas', 'Courier New', monospace; letter-spacing: 1px; }
-      .chip { fill: #0d1f35; stroke: #3767a6; stroke-width: 1; }
-      .chipText { fill: #7fd5ff; font: 15px 'Consolas', 'Courier New', monospace; }
-      .okText { fill: #74ffbc; font: 15px 'Consolas', 'Courier New', monospace; }
+      .buttonDanger { fill: #0f1826; stroke: #d96a8b; stroke-width: 1; }
+      .buttonText { fill: #95ccff; font: 15px 'Consolas', 'Courier New', monospace; letter-spacing: 0.7px; }
+      .buttonDangerText { fill: #ff8faa; font: 15px 'Consolas', 'Courier New', monospace; letter-spacing: 0.7px; }
+      .chip { fill: #0d1f35; stroke: #4e8ed8; stroke-width: 1; }
+      .chipText { fill: #74ffbc; font: 15px 'Consolas', 'Courier New', monospace; }
       .drop { fill: #081425; stroke: #4e8ed8; stroke-width: 1; stroke-dasharray: 4 3; }
+      .progressTrack { fill: #13263d; }
+      .progressFill { fill: #8edcff; }
     </style>
   </defs>
 
-  <rect class="bg" x="0" y="0" width="460" height="625"/>
-  <rect x="0.5" y="0.5" width="459" height="624" fill="none" stroke="#1f3f6b"/>
+  <rect class="bg" x="0" y="0" width="463" height="649"/>
+  <rect class="frame" x="0.5" y="0.5" width="462" height="648"/>
 
   <circle cx="18" cy="18" r="6" fill="#ff7d96"/>
   <circle cx="39" cy="18" r="6" fill="#f2c14a"/>
   <circle cx="60" cy="18" r="6" fill="#6bc4ff"/>
   <text class="muted" x="82" y="23">root@sharescope:~$ mini_hud</text>
+  <line class="rule" x1="0" y1="38.5" x2="463" y2="38.5"/>
 
-  <rect class="panel" x="10" y="45" width="440" height="88"/>
-  <text class="title" x="23" y="71">ShareScope</text>
-  <text class="muted" x="23" y="97">Drop a file. Direct media link first, fallback page if</text>
-  <text class="muted" x="23" y="119">needed.</text>
+  <rect class="panel" x="10" y="49" width="442" height="90"/>
+  <text class="title" x="22" y="72">ShareScope</text>
+  <text class="body" x="22" y="100">Drop a file. Direct media link first, fallback page if</text>
+  <text class="body" x="22" y="124">needed.</text>
 
-  <rect class="panel" x="10" y="145" width="440" height="56"/>
-  <rect class="chip" x="22" y="153" width="48" height="28"/>
-  <text class="chipText" x="31" y="172">IDLE</text>
-  <rect class="chip" x="81" y="153" width="88" height="28"/>
-  <text class="okText" x="93" y="172">FALLBACK OK</text>
-  <text class="muted" x="179" y="169">Link copied for 20260401-1101-</text>
-  <text class="muted" x="179" y="188">43.6989450.mp4.</text>
+  <rect class="panel" x="10" y="150" width="442" height="64"/>
+  <rect class="chip" x="22" y="162" width="110" height="30"/>
+  <text class="chipText" x="31" y="182">UPLOADING 23%</text>
+  <rect class="chip" x="143" y="162" width="92" height="30"/>
+  <text class="chipText" x="154" y="182">FALLBACK OK</text>
+  <text class="body" x="246" y="171">[12:37:44] uploading</text>
+  <text class="body" x="246" y="188">ShareScope.rar to Catbox</text>
+  <text class="body" x="246" y="205">direct-link</text>
+  <rect class="progressTrack" x="22" y="201" width="383" height="5" rx="2"/>
+  <rect class="progressFill" x="22" y="201" width="92" height="5" rx="2"/>
 
-  <rect class="panel" x="10" y="213" width="440" height="201"/>
-  <rect class="drop" x="22" y="231" width="416" height="113"/>
-  <text class="body" x="132" y="293">Drag and drop files here</text>
-  <rect class="button" x="28" y="367" width="110" height="34"/>
-  <text class="buttonText" x="37" y="389">BROWSE FILES</text>
+  <rect class="panel" x="10" y="224" width="442" height="208"/>
+  <rect class="drop" x="22" y="238" width="416" height="113"/>
+  <text class="title" x="129" y="306" style="font-size:15px;font-weight:600;">Drag and drop files here</text>
+  <rect class="button" x="23" y="386" width="113" height="34"/>
+  <text class="buttonText" x="34" y="408">BROWSE FILES</text>
 
-  <rect class="panel" x="10" y="425" width="440" height="189"/>
-  <text class="body" x="22" y="453">1 file(s)</text>
-  <rect class="button" x="383" y="437" width="52" height="28"/>
-  <text class="buttonText" x="391" y="456">CLEAR</text>
-
-  <line x1="10" y1="474" x2="450" y2="474" stroke="#1f3f6b"/>
-  <text class="body" x="22" y="497">20260401-1101-43.6989450.mp4</text>
-  <text class="muted" x="22" y="523">DIRECT LINK / 10.8 MB</text>
-  <rect class="button" x="339" y="486" width="45" height="31"/>
-  <text class="buttonText" x="348" y="507">COPY</text>
-  <rect class="button" x="389" y="486" width="45" height="31"/>
-  <text class="buttonText" x="398" y="507">OPEN</text>
+  <rect class="panel" x="10" y="443" width="442" height="190"/>
+  <text class="body" x="22" y="472">0 file(s)</text>
+  <rect class="buttonDanger" x="384" y="456" width="52" height="28"/>
+  <text class="buttonDangerText" x="391" y="475">CLEAR</text>
+  <line class="rule" x1="10" y1="493.5" x2="452" y2="493.5"/>
+  <text class="body" x="22" y="520">No upload yet.</text>
 </svg>

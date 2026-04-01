@@ -1,6 +1,7 @@
 ShareScope.exe
 ShareScope.rar
 sharescope_state.json
+push_all.bat
 *.mp4
 *.mov
 *.avi
