@@ -2,6 +2,8 @@
 
 ShareScope est un mini HUD desktop pour envoyer un fichier en quelques secondes et recuperer un lien partageable tout de suite.
 
+Pour l'utiliser, il suffit de telecharger la derniere release Windows et de lancer l'executable.
+
 L'objectif est simple :
 - ouvrir l'app
 - glisser un fichier dans la zone centrale
@@ -12,7 +14,7 @@ L'app est pensee pour les usages rapides, notamment quand un fichier ou une vide
 
 ## Apercu
 
-![ShareScope HUD](docs/hud-preview-v2.svg)
+![ShareScope HUD](docs/preview.png)
 
 ## Fonctionnalites
 
@@ -39,7 +41,7 @@ L'application choisit automatiquement le meilleur chemin disponible. Tu n'as rie
 
 ## Utilisation
 
-1. Lance `ShareScope.exe` ou `python app.py`.
+1. Lance `ShareScope.exe`.
 2. Glisse un ou plusieurs fichiers dans la zone `Drag and drop files here`.
 3. Attends la fin de l'upload.
 4. Clique sur `Copy` pour recuperer le lien.
@@ -80,31 +82,16 @@ Au survol d'une ligne, le tooltip affiche un resume plus detaille dans le meme s
 - pour les tres gros fichiers, l'app peut passer par un mode de partage moins adapte aux previews directes
 - l'historique est local au PC et au dossier utilisateur courant
 
-## Installation
-
-Installe les dependances :
-
-```powershell
-python -m pip install -r requirements.txt
-```
-
 ## Lancement
 
-Depuis le code source :
-
-```powershell
-python app.py
-```
-
-Ou via le lanceur Windows :
-
-```powershell
-launch_hud.bat
-```
+- telecharge la derniere release
+- lance `ShareScope.exe`
+- glisse un fichier dans le HUD
+- copie le lien une fois l'upload termine
 
 ## Distribution
 
-Une version compilee Windows peut etre distribuee sous forme d'executable unique.
+La version a utiliser est la release Windows fournie avec le projet.
 
 Pour un utilisateur final, le flux reste le meme :
 - ouvrir l'app

@@ -2,6 +2,7 @@ ShareScope.exe
 ShareScope.rar
 sharescope_state.json
 push_all.bat
+launch_hud.bat
 *.mp4
 *.mov
 *.avi
